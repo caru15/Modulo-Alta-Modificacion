@@ -1,0 +1,70 @@
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\obj\Debug\ABMGrafica.Form1.resources
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\bin\Debug\ABMGrafica.exe
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\bin\Debug\ABMGrafica.pdb
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\obj\Debug\ABMGrafica.exe
+d:\documents\visual studio 2015\Projects\ABMGrafica\ABMGrafica\obj\Debug\ABMGrafica.pdb
+A:\2016\segundo cuatrimestre\c#\Activiad 6\lo que me mandaron\ultimo\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+A:\2016\segundo cuatrimestre\c#\Activiad 6\lo que me mandaron\ultimo\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+A:\2016\segundo cuatrimestre\c#\Activiad 6\lo que me mandaron\ultimo\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+A:\2016\segundo cuatrimestre\c#\Activiad 6\lo que me mandaron\ultimo\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+A:\2016\segundo cuatrimestre\c#\Activiad 6\lo que me mandaron\ultimo\ABMGrafica\obj\Debug\ABMGrafica.exe
+A:\2016\segundo cuatrimestre\c#\Activiad 6\lo que me mandaron\ultimo\ABMGrafica\obj\Debug\ABMGrafica.pdb
+A:\2016\segundo cuatrimestre\c#\Activiad 6\lo que me mandaron\ultimo\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+A:\2016\segundo cuatrimestre\c#\Activiad 6\lo que me mandaron\ultimo\ABMGrafica\bin\Debug\ABMGrafica.exe
+A:\2016\segundo cuatrimestre\c#\Activiad 6\lo que me mandaron\ultimo\ABMGrafica\bin\Debug\ABMGrafica.pdb
+C:\Users\Victor\Desktop\modulo de alta\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+C:\Users\Victor\Desktop\modulo de alta\ABMGrafica\bin\Debug\ABMGrafica.exe
+C:\Users\Victor\Desktop\modulo de alta\ABMGrafica\bin\Debug\ABMGrafica.pdb
+C:\Users\Victor\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+C:\Users\Victor\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+C:\Users\Victor\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+C:\Users\Victor\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+C:\Users\Victor\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.exe
+C:\Users\Victor\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.pdb
+C:\Users\Usuario\Desktop\modulo de alta\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+C:\Users\Usuario\Desktop\modulo de alta\ABMGrafica\bin\Debug\ABMGrafica.exe
+C:\Users\Usuario\Desktop\modulo de alta\ABMGrafica\bin\Debug\ABMGrafica.pdb
+C:\Users\Usuario\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+C:\Users\Usuario\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+C:\Users\Usuario\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.exe
+C:\Users\Usuario\Desktop\modulo de alta\ABMGrafica\obj\Debug\ABMGrafica.pdb
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.pdb
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.MainForm.resources
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.exe
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.pdb
+C:\Users\Usuario\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.FormModificar.resources
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.pdb
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.FormModificar.resources
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.MainForm.resources
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.exe
+C:\Users\win\Desktop\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.pdb
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.exe
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.pdb
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.pdb
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.FormModificar.resources
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.MainForm.resources
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
