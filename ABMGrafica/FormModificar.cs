@@ -16,20 +16,18 @@ namespace ABMGrafica
         Validar v = new Validar();
         private Persona clienteP = new Persona();
 		private string direccionArchivo ;
-		private int NumFila ;
-		private DataGridView dataGrilla ;
-		
+		private int posicionRegistroMoficar ;
+        private int CantidadCuotas;
+        string[] cuotas = new string[5];
+
         //Constructor
-        public FormModificar(string ruta , DataGridView data)
+        public FormModificar(string ruta , int nroPrestamo)
         {
 
         	direccionArchivo = ruta ;
-        	dataGrilla = data;
-        	int FilaSeleccionada = dataGrilla.CurrentRow.Index ;
-        	NumFila = FilaSeleccionada;
         	InicializarFichero( direccionArchivo );
             InitializeComponent();
-            mostrarDatos();
+            mostrarDatos( nroPrestamo );
             
         }
 
@@ -37,23 +35,24 @@ namespace ABMGrafica
         	Prestamos = new ListaPrestamos(fichero);
         }
         
-        private void ButtonGurdarClick(object sender, EventArgs e)
+        private void ButtonOKClick(object sender, EventArgs e)
         {
             double montoNuevo, montoTotal, montoViejo, MontoNeto;
 
             //tomo el registro de la persona que estoy cambiando el monto
-            int nroIdentidad = int.Parse(TBNrID.Text);
-            int i = Prestamos.BuscarReg(nroIdentidad);//me devuelve el numero de registro
-            clienteP = Prestamos.LeerReg(i);
+            int nroPrestamo = int.Parse(TBNPrestamos.Text);
+            posicionRegistroMoficar = Prestamos.BuscarPrestamoReg(nroPrestamo);//me devuelve el numero de registro
+            clienteP = Prestamos.LeerReg( posicionRegistroMoficar );
             montoNuevo =double.Parse(TBMonto.Text);
 
             if (clienteP.Prestamos.FechaAutorizacion == "aaaa-mm-dd")
             {
-                montoTotal = Prestamos.MontoTotal(nroIdentidad);
+                montoTotal = Prestamos.MontoTotal(clienteP.NumIdentidad);
                 montoViejo = clienteP.Prestamos.Monto;//aqui tengo el monto a modificar
                 MontoNeto = (montoTotal - montoViejo) + montoNuevo;
-                if (MontoNeto <= 1000)
-                   {/*lo guarda en el fichero*/
+                if (MontoNeto <= clienteP.MontoMAximo)
+                {
+                	/*lo guarda en el fichero*/
                     clienteP.NumIdentidad = int.Parse(TBNrID.Text);
                     clienteP.Nombre = TBNombre.Text;
                     clienteP.Apellido = TBApellido.Text;
@@ -61,50 +60,110 @@ namespace ABMGrafica
                     clienteP.Celular = long.Parse(TBCelular.Text);
                     (clienteP.Prestamos).Monto = double.Parse(TBMonto.Text);
                     string fecha = clienteP.Prestamos.Fecha;
-                    Prestamos.EscribirRegistro(i, clienteP);
+					
+					TBMonto.Enabled = false;
+					TBCuotas.Enabled = true ;
+					dateTimePicker1.Enabled = true ;
+					btnOK.Enabled = false;
+					btnGuardar.Enabled = true;
+					
                 }
                 else
-                { /*ingrese otro monto*/}
+                {
+                	MessageBox.Show("El monto Supera al Monto Maximo Ingrese Otro");
+                }
             }
             else
-            { MessageBox.Show("Ya fue Autorizado el Prestamo, no puede cambiar el monto"); }
-            Close();
-			Prestamos.CerrarFichero();	// NO BORRAR
+            { 
+            	MessageBox.Show("Ya fue Autorizado el Prestamo, no puede cambiar el monto");
+            	Prestamos.CerrarFichero();	// NO BORRAR
+            	Close();
+            }
         }
-		void ButtonCancelarClick(object sender, EventArgs e)
+        private void ButtonGuardarClick(object sender, EventArgs e)
+        {
+            AsignarFechaCuotas();
+        	//Prestamos.EscribirRegistro( posicionRegistroMoficar, clienteP);
+        	Prestamos.CerrarFichero();
+        	Close();
+        	
+        }
+        //este metodo me duvelve el monto  a pagar por cada cuota
+        public double MontoCuotas() {
+
+            CantidadCuotas = int.Parse(TBCuotas.Text);
+             double Monto=double.Parse(TBMonto.Text);
+            double MontoCadaCuota = Monto / CantidadCuotas;
+            return MontoCadaCuota;
+        }
+        //metodo que asigna Fecha de pago de cada una de la cuotas
+        public void AsignarFechaCuotas() {
+
+            int nroPrestamo = int.Parse(TBNPrestamos.Text);
+            posicionRegistroMoficar = Prestamos.BuscarPrestamoReg(nroPrestamo);//me devuelve el numero de registro
+            clienteP = Prestamos.LeerReg(posicionRegistroMoficar);
+            string Fa = clienteP.Prestamos.FechaAutorizacion;
+            string[] f = Fa.Split('-');
+            int anio = int.Parse(f[0]);
+            int mes = int.Parse(f[1]);
+            int dia = int.Parse(f[2]);
+                //Fa es la fecha de autorizacion
+            int cc = CantidadCuotas;
+            int i = 0;
+            while (cc > 0) { 
+                if (mes == 12) { cuotas[i] = (anio + 1).ToString() + "-" + "01" + "-"+f[2];
+                    mes = 1; anio = anio + 1;i++;
+                }
+                else { cuotas[i] = anio.ToString()+ "-" + (mes + 1).ToString() + "-" + f[2];
+                    mes = mes + 1; i++;
+                }
+                cc--;
+            }
+            //LLAMAR AQUI EL METODO QUE HACE GIME//
+            GuardaFechas(clienteP);
+            Prestamos.EscribirRegistro(posicionRegistroMoficar, clienteP);
+        }
+        public void GuardaFechas(Persona obj) {
+
+            for (int i = 0; i < 6; i++) {
+                cuotas[i] = "aaaa-mm-dd";
+            }
+            
+            obj.Prestamos.Cuotacero = cuotas[0];
+            obj.Prestamos.Cuotauno = cuotas[1];
+            obj.Prestamos.Cuotados = cuotas[2];
+            obj.Prestamos.Cuotatres = cuotas[3];
+            obj.Prestamos.Cuotacuatro = cuotas[4];
+            obj.Prestamos.Cuotacinco = cuotas[5];
+        }
+        void ButtonCancelarClick(object sender, EventArgs e)
 		{
 			Prestamos.CerrarFichero();
 			Close();
 		}
-		private void mostrarDatos ()
+		private void mostrarDatos (int nroPrestamo)
 		{
-			int nroIdentidad = obtenerNroIdentidadGrilla();
-			int i = Prestamos.BuscarReg(nroIdentidad);
+			int i = Prestamos.BuscarPrestamoReg(nroPrestamo);//me devuelve el numero de registro
+            clienteP = Prestamos.LeerReg(i);/*lo guarda en el fichero*/
+				
+            habilitarDatosPer(false);
+            TBNrID.Text = clienteP.NumIdentidad.ToString();
+            TBNombre.Text = clienteP.Nombre;
+            TBApellido.Text = clienteP.Apellido;
+            TBTelefono.Text = clienteP.Telefono.ToString();
+            TBCelular.Text = clienteP.Celular.ToString();
+            TBNPrestamos.Text = ""+nroPrestamo;
 			
-			if( Prestamos.TopePrestamo(nroIdentidad) ){
-				MessageBox.Show("Este cliente no puede solicitar mas prestamos");
-				TBNrID.ResetText();
-				TBNrID.Focus();
-			}else{
-				clienteP = Prestamos.LeerReg(Prestamos.Nregs - 1);
-				TBNPrestamos.Text = ""+(NumFila+1);
-				habilitarDatosPer(false);
-				clienteP = Prestamos.LeerReg(i);
-				TBNrID.Text = clienteP.NumIdentidad.ToString();
-				TBNombre.Text = clienteP.Nombre;
-				TBApellido.Text = clienteP.Apellido;
-				TBTelefono.Text = clienteP.Telefono.ToString();
-				TBCelular.Text = clienteP.Celular.ToString();
-			}
 		}
 		
+		/*
 		public string obtenerValorCeldaGrilla (int fila , int col){
 			return (string ) dataGrilla.Rows[fila].Cells[col].Value ;
 		}
 		public int obtenerNroIdentidadGrilla (){
 			return (int) dataGrilla.Rows[NumFila].Cells[1].Value ;
 		}
-		
+		*/
 		 
 		public void habilitarDatosPer(bool e){
 			TBNrID.Enabled = e ;
@@ -113,7 +172,10 @@ namespace ABMGrafica
 			TBTelefono.Enabled = e;
 			TBCelular.Enabled = e;
 			TBMonto.Enabled = true;
-			btnGuardar.Enabled = true;
+			TBCuotas.Enabled = e ;
+			dateTimePicker1.Enabled = e ;
+			btnOK.Enabled = true;
+			btnGuardar.Enabled = e ;
 		}
 		void TBNrIDKeyPress(object sender, KeyPressEventArgs e)
 		{
@@ -139,6 +201,11 @@ namespace ABMGrafica
 		{
 			v.soloNumerosDecimales(e);
 		}
+		void TBCuotasKeyPress(object sender, KeyPressEventArgs e)
+		{
+			v.soloNumeros(e);
+		}
+		
        
     }
 }

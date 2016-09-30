@@ -84,8 +84,9 @@ namespace ABMGrafica
 			Prestamos.CerrarFichero();
 			abierto= false;
 			
-			//int numFila = dataGridView1.CurrentRow.Index ;
-			FormModificar modificar = new FormModificar(direccionArchivo , dataGridView1 );
+			int numFila = dataGridView1.CurrentRow.Index ;
+			int nPrestamo = (int) dataGridView1.Rows[numFila].Cells[0].Value ;
+			FormModificar modificar = new FormModificar(direccionArchivo , nPrestamo );
 			modificar.Show();
 				
 		}

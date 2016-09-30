@@ -57,12 +57,12 @@ namespace ABMGrafica
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(13, 13);
 			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(809, 189);
+			this.dataGridView1.Size = new System.Drawing.Size(809, 300);
 			this.dataGridView1.TabIndex = 0;
 			// 
 			// btnActualizarLista
 			// 
-			this.btnActualizarLista.Location = new System.Drawing.Point(12, 208);
+			this.btnActualizarLista.Location = new System.Drawing.Point(13, 319);
 			this.btnActualizarLista.Name = "btnActualizarLista";
 			this.btnActualizarLista.Size = new System.Drawing.Size(75, 23);
 			this.btnActualizarLista.TabIndex = 1;
@@ -72,18 +72,17 @@ namespace ABMGrafica
 			// 
 			// btnAgregar
 			// 
-			this.btnAgregar.Location = new System.Drawing.Point(287, 208);
+			this.btnAgregar.Location = new System.Drawing.Point(288, 319);
 			this.btnAgregar.Name = "btnAgregar";
 			this.btnAgregar.Size = new System.Drawing.Size(75, 23);
 			this.btnAgregar.TabIndex = 2;
 			this.btnAgregar.Text = "Agregar";
 			this.btnAgregar.UseVisualStyleBackColor = true;
 			this.btnAgregar.Click += new System.EventHandler(this.ButtonAgregarClick);
-			
 			// 
 			// btnModificar
 			// 
-			this.btnModificar.Location = new System.Drawing.Point(368, 208);
+			this.btnModificar.Location = new System.Drawing.Point(369, 319);
 			this.btnModificar.Name = "btnModificar";
 			this.btnModificar.Size = new System.Drawing.Size(75, 23);
 			this.btnModificar.TabIndex = 3;
@@ -93,7 +92,7 @@ namespace ABMGrafica
 			// 
 			// btnSalir
 			// 
-			this.btnSalir.Location = new System.Drawing.Point(747, 227);
+			this.btnSalir.Location = new System.Drawing.Point(747, 346);
 			this.btnSalir.Name = "btnSalir";
 			this.btnSalir.Size = new System.Drawing.Size(75, 23);
 			this.btnSalir.TabIndex = 4;
@@ -103,7 +102,7 @@ namespace ABMGrafica
 			// 
 			// btnBorrar
 			// 
-			this.btnBorrar.Location = new System.Drawing.Point(450, 208);
+			this.btnBorrar.Location = new System.Drawing.Point(450, 319);
 			this.btnBorrar.Name = "btnBorrar";
 			this.btnBorrar.Size = new System.Drawing.Size(75, 23);
 			this.btnBorrar.TabIndex = 5;
@@ -114,7 +113,7 @@ namespace ABMGrafica
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(834, 262);
+			this.ClientSize = new System.Drawing.Size(834, 381);
 			this.Controls.Add(this.btnBorrar);
 			this.Controls.Add(this.btnSalir);
 			this.Controls.Add(this.btnModificar);

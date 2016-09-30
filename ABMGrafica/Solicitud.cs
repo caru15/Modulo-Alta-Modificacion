@@ -18,9 +18,9 @@ namespace ABMGrafica
         private string Cuota3;
         private string Cuota4;
         private string Cuota5;
-        private string fechaAutorizacion ;
-        private string fechaEntregaPrestamo;
-		private string fecha;
+        private string fechaAutorizacion ;//se modifica en el modulo modificar
+        private string fechaEntregaPrestamo;//este se calcula
+		private string fecha;//fecha de alta
         //Constructor
         public Solicitud()
         {

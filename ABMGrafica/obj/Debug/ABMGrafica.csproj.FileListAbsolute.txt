@@ -68,3 +68,39 @@ C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica
 C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
 C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
 C:\Users\casa\Downloads\Modulo Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.exe
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.pdb
+D:\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+D:\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe
+D:\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.pdb
+D:\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+D:\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.FormModificar.resources
+D:\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.MainForm.resources
+D:\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+D:\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+D:\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+D:\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.exe
+D:\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.pdb
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.FormModificar.resources
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.MainForm.resources
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.exe
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\bin\Debug\ABMGrafica.exe
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\bin\Debug\ABMGrafica.pdb
+C:\Users\win\Desktop\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.pdb
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.exe
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.pdb
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\bin\Debug\ABMGrafica.exe
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\bin\Debug\ABMGrafica.pdb
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.FormModificar.resources
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.MainForm.resources
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache

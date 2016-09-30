@@ -131,6 +131,31 @@ namespace ABMGrafica
     			return -1;}
   		}
   		
+  		public int BuscarPrestamoReg(int nroPrestamo)
+		  {
+    		// Buscar un registro por una subcadena del nombre
+    		// a partir de un registro determinado
+    		Persona obj;
+    		int num;
+    		int reg_i = 0;
+    		bool encontrado = false;
+    
+    		if (nroPrestamo < 0 ) return -1;
+    		while( (reg_i < nregs) && (!encontrado)) {
+    					obj = LeerReg(reg_i);
+    					num = obj.Prestamos.NroPrestamo;
+    					if(num == nroPrestamo){
+    								encontrado = true;
+    					}
+    					else
+    						reg_i++;
+    			}
+    		if ( encontrado){
+    					return reg_i;
+    		}else{
+    			return -1;}
+  		}
+  		
   		public double MontoTotal(int nroIdentidad){
   			double monto = 0;
   			Persona obj;
