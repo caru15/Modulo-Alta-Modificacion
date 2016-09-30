@@ -104,3 +104,21 @@ C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debu
 C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
 C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
 C:\Users\casa\Documents\GitHub\Modulo-Alta-Modificacion v3.0\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe.config
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.exe
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.pdb
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.exe
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\ABMGrafica.pdb
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\mscorlib.dll
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\es\mscorlib.resources.dll
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\normidna.nlp
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\normnfc.nlp
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\normnfd.nlp
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\normnfkc.nlp
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\bin\Debug\normnfkd.nlp
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csprojResolveAssemblyReference.cache
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.FormModificar.resources
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.MainForm.resources
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.Properties.Resources.resources
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.VentanaCliente.resources
+C:\Users\gymena\Documents\GitHub\Modulo-Alta-Modificacion\ABMGrafica\obj\Debug\ABMGrafica.csproj.GenerateResource.Cache

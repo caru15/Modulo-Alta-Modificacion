@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ABMGrafica
 {
     public partial class FormModificar : Form
@@ -97,37 +98,49 @@ namespace ABMGrafica
             return MontoCadaCuota;
         }
         //metodo que asigna Fecha de pago de cada una de la cuotas
-        public void AsignarFechaCuotas() {
-
+        public void AsignarFechaCuotas() 
+        {
+            string[] f;
             int nroPrestamo = int.Parse(TBNPrestamos.Text);
             posicionRegistroMoficar = Prestamos.BuscarPrestamoReg(nroPrestamo);//me devuelve el numero de registro
             clienteP = Prestamos.LeerReg(posicionRegistroMoficar);
-            string Fa = clienteP.Prestamos.FechaAutorizacion;
-            string[] f = Fa.Split('-');
+            //string Fa = clienteP.Prestamos.FechaAutorizacion;
+            string Fa = dateTimePicker1.Text;
+           
+            //DateTime F = DateTime.Parse(Fa);
+            //Fa= date.ToString("yyyy-MM-dd");
+            f = Fa.Split('-');                            //cary no lo separa la fecha xq guarda "viernes,30 de septiembre 2016"
             int anio = int.Parse(f[0]);
             int mes = int.Parse(f[1]);
             int dia = int.Parse(f[2]);
+            //int anio = F.Year;
+            //int mes = F.Month;
+            //int dia = F.Day;
                 //Fa es la fecha de autorizacion
             int cc = CantidadCuotas;
             int i = 0;
             while (cc > 0) { 
-                if (mes == 12) { cuotas[i] = (anio + 1).ToString() + "-" + "01" + "-"+f[2];
+                if (mes == 12) 
+                { 
+                    cuotas[i] = (anio + 1).ToString() + "-" + "01" + "-"+dia;
                     mes = 1; anio = anio + 1;i++;
                 }
-                else { cuotas[i] = anio.ToString()+ "-" + (mes + 1).ToString() + "-" + f[2];
+                else { cuotas[i] = anio.ToString()+ "-" + (mes + 1).ToString() + "-" +dia;
                     mes = mes + 1; i++;
                 }
                 cc--;
             }
             //LLAMAR AQUI EL METODO QUE HACE GIME//
+            ModificarFechaCoutaFinSemana();
             GuardaFechas(clienteP);
             Prestamos.EscribirRegistro(posicionRegistroMoficar, clienteP);
         }
         public void GuardaFechas(Persona obj) {
 
-            for (int i = 0; i < 6; i++) {
-                cuotas[i] = "aaaa-mm-dd";
-            }
+           // for (int i = 0; i < 6; i++) 
+            //{
+            //    cuotas[i] = "aaaa-mm-dd";
+            //}
             
             obj.Prestamos.Cuotacero = cuotas[0];
             obj.Prestamos.Cuotauno = cuotas[1];
@@ -136,6 +149,38 @@ namespace ABMGrafica
             obj.Prestamos.Cuotacuatro = cuotas[4];
             obj.Prestamos.Cuotacinco = cuotas[5];
         }
+        public int DiaSemana(string t) // obtiene el dia de la semana
+        {
+            DateTime da = DateTime.Parse(t);
+            int dateValue = (int)(da.DayOfWeek);
+            return dateValue;    
+        }
+
+        public void ModificarFechaCoutaFinSemana() //Modifica las fechas de cuotas si caen un fin de semana
+        {
+            
+            for (int i = 0; i < cuotas.Length; i++)
+            {
+                int resp = DiaSemana(cuotas[i]);
+                string [] f = cuotas[i].Split('-');
+                int anio = int.Parse(f[0]);
+                int mes = int.Parse(f[1]);
+                int dia = int.Parse(f[2]);
+                if (resp==7)
+                {
+                    cuotas[i] = f[0]+ "-" + f[1] +"-"+ (dia+1).ToString();
+                }
+                else if(resp==6)
+                {
+                    cuotas[i] = f[0]+ "-" + f[1] +"-"+ (dia+2).ToString();
+                }
+                else
+                {
+                    cuotas[i] = cuotas[i];       
+                }
+            }
+        }
+        
         void ButtonCancelarClick(object sender, EventArgs e)
 		{
 			Prestamos.CerrarFichero();
@@ -204,9 +249,7 @@ namespace ABMGrafica
 		void TBCuotasKeyPress(object sender, KeyPressEventArgs e)
 		{
 			v.soloNumeros(e);
-		}
-		
-       
+		}       
     }
 }
 
